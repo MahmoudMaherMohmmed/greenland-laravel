@@ -1,0 +1,660 @@
+:root {
+    --main-color: #73c427;
+}
+
+body {
+}
+
+.section-heading {
+    font-size: 3.6em;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.section-subheading {
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Source Sans Pro';
+    color: #999;
+}
+
+/*----- Navigation -----*/
+.navbar-inverse {
+    height: 110px;
+    background-color: transparent;
+}
+
+.navbar-brand {
+}
+
+.navbar-brand img {
+    display: inline;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -50px;
+}
+
+.navbar-brand span {
+    font-size: 40px;
+    color: var(--main-color);
+    font-family: 'Source Sans Pro';
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+.navbar-nav > li > a {
+    font-size: 18px;
+    padding: 45px 25px;
+    font-family: 'Source Sans Pro';
+    color: #9d9d9d;
+    font-weight: bold;
+}
+
+.navbar-nav > .active > a {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.navbar-nav > li > a:hover {
+    color: var(--main-color);
+    background-color: #2e3547;
+}
+
+.navbar-toggle {
+    padding: 20px 10px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: var(--main-color);
+}
+
+.navbar-collapse {
+    background-color: transparent;
+}
+
+.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+    background-color: #2e3547;
+}
+
+.dropdown-menu {
+    background-color: #2e3547;
+    left: 0 !important;
+    min-width: 225px;
+}
+
+.dropdown-menu li a {
+    color: #9d9d9d;
+    font-size: 18px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+    #mainNav {
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+        border: none;
+        background-color: transparent;
+    }
+
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #2e3547;
+        height: 60px;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand img {
+        width: 105px;
+        height: 105px;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand span {
+        font-size: 30px;
+        padding-left: 5px;
+        font-weight: bold;
+        top: -35px;
+    }
+
+    #mainNav.navbar-shrink .navbar-nav > li > a {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar-brand {
+        padding: 40px 10px;
+    }
+
+    .navbar-brand span {
+        font-size: 30px;
+        padding-left: 10px;
+        position: relative;
+        top: -33px;
+    }
+
+    .navbar-brand img {
+        display: inline;
+        position: relative;
+        top: -38px;
+        padding-top: 5px;
+    }
+
+    .navbar-nav > li > a {
+        font-size: 14px;
+        padding: 45px 15px;
+    }
+
+    .navbar .navbar-collapse {
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-fixed-top {
+        height: 110px;
+        background-color: #2e3547;
+    }
+
+    .navbar-brand span {
+        font-size: 30px;
+        padding-left: 10px;
+        position: relative;
+        top: -20px;
+    }
+
+    .navbar-brand img {
+        height: 75px;
+        width: 75px;
+        display: inline;
+        position: relative;
+        top: -25px;
+        padding-top: 5px;
+    }
+
+    .navbar-right {
+        margin-right: 0px;
+    }
+
+    .navbar .navbar-collapse {
+        max-height: 500px;
+        margin-top: 20px;
+        background-color: #2e3547;
+    }
+
+    .navbar-nav > li > a {
+        padding: 15px;
+    }
+}
+
+/*----- Navigation ----*/
+
+/*----- carousel -----*/
+.carousel {
+    padding-top: 110px;
+}
+
+.carousel-inner > .item > img {
+    height: calc(100vh - 110px);
+}
+
+/*----- carousel -----*/
+
+/*----- Home Page Styling -----*/
+/*----- Company Defination Section -----*/
+.CompanyDefination {
+    text-align: center;
+    padding-top: 75px;
+}
+
+.CompanyDefination .subsection {
+    padding: 25px 0px 0px;
+    min-height: 450px;
+}
+
+.CompanyDefination h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.CompanyDefination p {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    line-height: 25px;
+    color: #999;
+}
+
+/*----- Company Defination Section -----*/
+
+/*----- About Section -----*/
+.about {
+    width: 100%;
+    margin-top: 100px;
+    min-height: 600px;
+    background: url('../Images/section-about-bg.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    overflow: hidden;
+}
+
+.about h2 {
+    padding: 75px 0px 0px;
+    font-size: 39px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.about .about-subtitle {
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: #666;
+    padding-bottom: 15px;
+    font-style: normal;
+}
+
+.about .aboutData {
+}
+
+.about p {
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Source Sans Pro';
+    color: #999;
+}
+
+/*----- About Section -----*/
+
+/*----- Our Important Products Section -----*/
+.ourImportantProducts {
+    padding-top: 75px;
+    text-align: center;
+}
+
+.ourImportantProducts h1 {
+    padding-bottom: 15px;
+}
+
+.ourImportantProducts .subtitle {
+    margin: .5rem 0 3.5rem;
+    color: #999;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+/*----- Our Important Products Section -----*/
+/*----- Home Page Styling -----*/
+
+/*----- About Page Styling -----*/
+/*----- Our Company -----*/
+.ourcompany {
+    min-height: 400px;
+
+}
+
+.ourcompany h1 {
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.ourcompany p {
+    line-height: 25px;
+    color: #999;
+    font-size: 20px;
+    font-family: 'Source Sans Pro';
+}
+
+/*----- Our Company -----*/
+
+/*----- Our Mission -----*/
+.ourmission {
+    margin-top: 50px;
+    color: white;
+    background-color: #2e3547;
+}
+
+.ourmission h1 {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.ourmission ul {
+    padding-bottom: 50px;
+}
+
+.ourmission ul li {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px;
+    font-family: 'Source Sans Pro';
+}
+
+/*----- Our Mission -----*/
+
+/*----- Our Goals -----*/
+.ourgoals {
+}
+
+.ourgoals h1 {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+.ourgoals ul li {
+    font-size: 20px;
+    line-height: 25px;
+    color: #999;
+    padding: 10px;
+    font-family: 'Source Sans Pro';
+}
+
+/*----- Our Goals -----*/
+/*----- About Page Styling -----*/
+
+/*----- Certificate Page Styling -----*/
+.certificates {
+    text-align: center;
+}
+
+.certificates img {
+    max-width: 75%;
+    margin-top: 100px;
+}
+
+.certificates p {
+    margin: 0px;
+}
+
+/*----- Certificate Page Styling -----*/
+
+/*----- ContactUs Page Styling -----*/
+.ContactUs {
+    min-height: 400px;
+}
+
+.ContactUs h1 {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ContactUs i.fa {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.ContactUs p {
+    color: #999;
+}
+
+.ContactUs li a {
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #999;
+}
+
+.ContactUs li a:hover {
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.styled-input input[type="text"], .styled-input input[type="email"], .styled-input textarea {
+    font-size: 1em;
+    color: #8c8c8c;
+    padding: 0.5em 1em 0.5em 0;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #929292;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.styled-input textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.styled-input input:focus ~ label, .styled-input input:valid ~ label, .styled-input textarea:focus ~ label, .styled-input textarea:valid ~ label {
+    font-size: .9em;
+    color: #333333;
+    top: -1.3em;
+    -webkit-transition: all 0.125s;
+    -moz-transition: all 0.125s;
+    -o-transition: all 0.125s;
+    -ms-transition: all 0.125s;
+    transition: all 0.125s;
+}
+
+.styled-input {
+    width: 100%;
+    position: relative;
+    margin: 0 0 3em;
+}
+
+.styled-input:nth-child(1), .styled-input:nth-child(3) {
+    margin-left: 0;
+}
+
+.textarea-grid {
+    float: none !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+.styled-input label {
+    color: #8c8c8c;
+    padding: 0.5em .9em 0.5em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+    font-weight: 400;
+    font-size: .9em;
+    display: block;
+    line-height: 1em;
+}
+
+.styled-input input ~ span, .styled-input textarea ~ span {
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    kit-transition: all 0.125s;
+    -moz-transition: all 0.125s;
+    transition: all 0.125s;
+}
+
+.styled-input textarea ~ span {
+    bottom: 5px;
+}
+
+.styled-input input:focus.styled-input textarea:focus {
+    outline: 0;
+}
+
+.styled-input input:focus ~ span, .styled-input textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s;
+    -moz-transition: all 0.075s;
+    transition: all 0.075s;
+}
+
+/*----- ContactUs Page Styling -----*/
+
+/*-----Footer-----*/
+footer {
+    margin-top: 50px;
+}
+
+footer .footer-above {
+    padding: 0px 0px 50px;
+    background-color: #2e3547;
+    color: white;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer hr {
+    width: 90%;
+    color: white;
+    align-items: center;
+}
+
+footer .aboutCompany {
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+}
+
+footer .footer-element {
+    padding-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 35px;
+}
+
+footer ul li {
+    height: 50px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Source Sans Pro';
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.info-element {
+    margin-bottom: 15px;
+    padding-left: 35px;
+}
+
+.info-element .fa {
+    padding: 0.4em .4em 0.4em 0em;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.info-element i {
+    float: left;
+}
+
+.contact-right {
+    padding-left: 3em;
+    padding-top: 12px;
+}
+
+.contact-right p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro';
+}
+
+.contact-right span {
+    font-size: 15px;
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.footer-below {
+}
+
+footer .footer-below .copyrights {
+    padding: 30px 0px;
+    color: #999;
+    font-family: 'Source Sans Pro';
+    font-size: 13px;
+}
+
+footer .footer-below .copyrights a {
+    padding: 30px 0px;
+    color: #999;
+    font-family: 'Source Sans Pro';
+    font-size: 13px;
+}
+
+footer .footer-below .copyrights a:hover {
+    color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+    footer .footer-below .copyrights {
+        text-align: center;
+        padding: 30px 10px;
+    }
+}
+
+footer .socialmedia {
+    padding: 10px 0px;;
+}
+
+footer .socialmedia .btn-social {
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 3px;
+    border-radius: 100%;
+    background-color: #2e3547;
+    color: var(--main-color);
+}
+
+footer .socialmedia .btn-social:hover {
+    border: 2px solid #2e3547;
+    color: #2e3547;
+    background-color: white;
+}
+
+/*-----Footer-----*/
